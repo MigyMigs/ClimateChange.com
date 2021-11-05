@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<title>Arts and ESP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+
+
+/* Dashed green border */
+hr.new2 {
+  border-top: 1px dashed green;
+}
+</style>
+<head>
+  <title>Font Awesome Icons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+<a href="homee.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="#arts" onclick="w3_close()" class="w3-bar-item w3-button">Arts</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+ <div class="w3-blue-gray w3-xlarge" style="max-width:100%;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()"><i class="fa fa-th"></i></div>
+    <div class="w3-right w3-padding-16"><button onclick=playMelodia()>
+<button onclick=pauseMelodia()>
+      <i class="fa fa-play-circle" style="font-size:20px;color:gray"></i>
+    </button>
+    <audio id="melodia" controls="" style="display: none"><source src="claire.mp3" type="audio/mp3">
+.</audio>
+</i></div>
+    <div class="w3-center w3-padding-16">Oeuvre</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="arts">
+
+    <div class="w3-quarter">
+      <img src="24.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
+        alt="The Butterfly Effect (2019)">
+      <h3>The Butterfly Effect (2019)</h3>
+    </div>
+
+    <div class="w3-quarter">
+      <img src=25.png style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
+        alt="Houses with smoke (2018)">
+      <h3> Houses with smoke (2018)</h3>
+     
+    </div>
+    <div class="w3-quarter">
+      <img src="26.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
+        alt="HOME (2019)">
+      <h3> HOME (2019)</h3>
+     
+    </div>
+    <div class="w3-quarter">
+      <img src="27.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
+        alt="Meltdown (2019)">
+      <h3>Meltdown (2019)</h3>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-padding-medium w3-display-topright" title="Close Modal Image"><i class="fa fa-arrow-left"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-32">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="28.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
+        alt="Polar Bear Epitaph (2019)">
+      <h3>Polar Bear Epitaph (2019)</h3>
+     
+    </div>
+    <div class="w3-quarter">
+      <img src="29.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
+        alt="Newtown Creek, 2014">
+      <h3>Newtown Creek, 2014</h3>
+     
+    </div>
+    <div class="w3-quarter">
+      <img src="30.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
+        alt="Climate Change a Painting ">
+      <h3>Climate Change a Painting </h3>
+     
+    </div>
+    <div class="w3-quarter">
+      <img src="31.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
+        alt="CLIMATE CHANGE? (2020)">
+      <h3>CLIMATE CHANGE? (2020)</h3>
+     
+
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+    <a href="artworks 3.html" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-arrow-left"></i></a>
+      <a href="Artworks.html" class="w3-bar-item w3-button w3-hover-black">1</a>
+      <a href="artworks 2.html" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="artworks 3.html" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="artworks 4.html" class="w3-bar-item w3-black w3-button">4</a>
+    </div>
+  </div>
+  
+
+   <hr class="new2" id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-dark-gray w3-padding-32 w3-center">  
+    <h3>
+Kondisyon Ng Mundo, Nakasalalay Sa Desisyon Mo.</h3><br>
+    <img src="Posteresp.png" alt="renelaine" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>Art By:</b></h4>
+      <h6><i>Renelaine Loquinario</i></h6>
+<div id="myDiv" style="text-indent:3cm;">
+      <p align="justify">Ang kalayaan ay taglay ng bawat nilalang mula pagkasilang. Ito ay napakahalaga at makapangyarihan pa 
+ kung kaya't kailangan itong alamin at pag-aralan. Sa matagal na pag-aaral tungkol dito, maaari itong 
+ magdulot ng malaking pinsala at responsibilidad natin ang mga kahihinatnan nito.  Isa sa mga malubhang 
+epekto ng maling paggamit ng kalayaan ay ang tinatawag na 'climate change' sa wikang Ingles. Ito'y tumutukoy
+ kung saan nagkakaroon ng abnormal na pagbabago ng klima sa ating mundo. Para sa ibang lugar, 
+napansing nagkaroon sila ng malubhang tag-init na naging bunga ng patuloy na pagtunaw ng mga iceberg o 
+malaking yelong nabuo dahil sa lamig ng panahon. Kumpara naman sa iba, hindi na bilang sa kanila ang 
+pagkakaroon ng mababang temperatura kahit dapat natigil na ito ayon sa mga impormasyong nakuha noong 
+nakaraang taon. Bilang responsableng mamamayan, dapat lamang alamin  kung ano ang tama at maling desisyon 
+upang maiwasan ang pang-aabuso sa ating kalikasan.  Ang maling paggamit ng ating kalayaan ay tiyak na walang 
+maidudulot na mabuti para sa lahat. 
+</p>
+</div>
+<br><br>
+
+<div id="myDiv" style="text-indent:3cm;">
+<p align="justify">
+ Tandaan natin ang ating mga maling desisyon ay magreresulta ng mga pangyayari na makakasama sa ating 
+kalikasan. Kasama na rito ang ilang halimbawa tulad ng patuloy na pagpuputol ng mga puno, ilegal na paggamit 
+ng fossil fuel, at paggamit ng mga plastik kung saan hindi nagtatapon sa tamang basurahan. Tayo'y may sapat na
+ kalayaan upang gawin lahat ng nais ngunit kabilang nito ang malungkot na katotohanan sa paglabag sa batas. Sa 
+kabilang banda, malalagyan naman ng limitasyon ang bawat karapatan ng mga mamamayan kung saan malalabag 
+ang kanilang kalayaan kung maging mahigpit na ang pamamalakad. Isipin natin ang mga susunod na henerasyon 
+na hindi makakilos nang maayos dahil sa ating mga maling kagagawan. Kung ating bigyang halaga ang 
+pagdedesisyon nang mabuti, posibleng mabago ang ating daigdig tungo sa maunlad na kinabukasan. Ito ay 
+magiging posible kung magsisimula tayo gumawa ng mga maliliit na pagbabago. Maihahalintulad dito ang 
+pagpiling maglakad o magbisikleta na lamang kaysa gumamit ng sasakyan lalo na kung malapit lang naman ang 
+pupuntahan. Pagbabawas ng paggamit ng plastik kung saan marami ng naimbento na alternatibong mga gamit na 
+maaaring kapalit ng plastik. Maliliit man ang mga hakbang na ito, magkakaroon pa rin ng malaking epekto sa 
+tulong na rin ng pagbabayanihan patungo sa tamang daan ng pag-asa. </p>
+</div>
+ <br>
+  
+<div id="myDiv" style="text-indent:3cm;">
+      <p align="justify">Sa mga panahong ito, ang pagkakaisa at pagtutulungan ang ating kailangan sapagkat 
+tayo lamang ang may kakayahan upang mabago ang ating kapalaran. Simulan na natin ang pagbabago dahil 
+kung hindi ngayon ay kailan? Atin nang simulang pag-isipan ang masusing pagpili sapagkat ang kondisyon 
+ng ating mundo ay nakasalalay sa bawat desisyon na ating gagawin. </p>
+</div>
+ 
+  <hr class="new2">
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Authors:</h3>
+      <p>Justine Cayton<br>
+     Renelaine Loquinario<br>
+        </p>
+  
+    </div>
+ 
+<div class="w3-third">
+      <ul class="w3-ul w3-hoverable w3-center w3-padding-32">
+     
+           <li class="w3-padding-16">
+          <a href="homee.html"/"target="_self"><i class="fa fa-arrow-left"></i>
+          <span class="w3-large">Back To Page</span><br></a>
+          
+        </li> 
+      </ul>
+    </div>
+
+
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+ function playMelodia() {
+      document.getElementById("melodia").play();
+    }
+ function pauseMelodia() {
+      document.getElementById("melodia").pause();
+    }
+
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

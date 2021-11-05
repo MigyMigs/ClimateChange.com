@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>eng</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {padding: 16px}
+</style>
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;" id="mySidebar">
+ 
+  <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
+  class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="document.getElementById('id01').style.display='block'">Let`s Watch <i class="w3-padding fa fa-television"></i></a>
+ <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-inbox w3-margin-right"></i>Question(4)<i class="fa fa-caret-down w3-margin-left"></i></a>
+  <div id="Demo1" class="w3-hide w3-animate-left">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('one');w3_close();" id="firstTab">
+      <div class="w3-container">
+        <img class="w3-round w3-margin-right" src="eng4.png" style="width:15%;"><span class="w3-opacity w3-large">Anonymus</span>
+         <h5>What is Climate Change?</h5>
+        <p>Hello, i just wanted to let you know <br> that i'll be home at...</p>
+      </div>
+    </a>
+
+     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('second');w3_close();">
+      <div class="w3-container">
+        <img class="w3-round w3-margin-right" src="eng5.png" style="width:15%;"><span class="w3-opacity w3-large">Anonymus 2</span>
+          <h5>Evidences of climate change</h5>
+        <p>The last 20 years have included some of the hottest on record, oceans rising due to the melting polar ice caps, pouring it into the oceans....</p>
+      </div>
+    </a>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('third');w3_close();">
+      <div class="w3-container">
+        <img class="w3-round w3-margin-right" src="eng6.png" style="width:15%;"><span class="w3-opacity w3-large">Anonymus 3</span>
+ <h5>Cause and Effects of climate change</h5>       
+ <p>CAUSES: <br>
+1. CFC (chlorofluorocarbon) emissions in the atmosphere from modes of transportation..</p>
+      </div>
+    </a>
+  </div>
+  
+  
+  <a href="homee.html" class="w3-bar-item w3-button"><i class="fa fa-mail-reply w3-margin-right"></i>Home</a>
+</nav>
+
+     <!-- Modal that pops up when you click on "New Message" -->
+<div id="id01" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-padding w3-red">
+       <span onclick="document.getElementById('id01').style.display='none'"
+       class="w3-button w3-red w3-right w3-xxlarge"><i class="fa fa-remove"></i></span>
+      <h2>What`s More?</h2>
+    </div>
+    <div class="w3-panel">
+     <label>What is climate change?</label>
+<br><br> 
+      <video width="800" controls>
+  <source src="What is climate change.mp4" type="video/mp4"> 
+</video>
+<br><br>
+      <label>What's Real Evidence of Climate Change Let's Talk NPR</label>
+      <br><br> 
+      <video width="800" controls>
+  <source src="What_s Real Evidence of Climate Change Let_s Talk NPR.mp4" type="video/mp4"> 
+</video>
+<br><br>
+      <label>Causes and Effects of Climate Change National Geographic</label>
+       <br><br> 
+      <video width="800" controls>
+  <source src="Causes and Effects of Climate Change National Geographic.mp4" type="video/mp4"> 
+<br><br>
+</video>
+     
+      <div class="w3-section">
+        <a class="w3-button w3-red" onclick="document.getElementById('id01').style.display='none'">Back <i class="fa fa-arrow-left"></i></a>
+       
+      </div>    
+    </div>
+  </div>
+</div>
+
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div class="w3-main" style="margin-left:320px;">
+<i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
+<a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
+
+
+
+<div id="one" class="w3-container person">
+  <br>
+  <img class="w3-round  w3-animate-top" src="eng1.png" style="width:50%;">
+  <h5 class="w3-opacity">climate change, the long lasting war against earth</h5>
+  <h1><i class="fa fa-clock-o"></i>What Is Climate Change?</h1>
+ 
+  <hr>
+  <p align="justify" style="font-size: 20px;">
+You might know what weather is. Weather is the changes we see and feel outside from day to day. It might rain one day and be sunny the next. Sometimes it is cold. Sometimes it is hot. Weather also changes from place to place. People in one place might be wearing shorts and playing outside. At the same time, people far away might be shoveling snow. Climate is the usual weather of a place. Climate can be different for different seasons. A place might be mostly warm and dry in the summer. The same place may be cool and wet in the winter. Different places can have different climates. You might live where it snows all the time. And some people live where it is always warm enough to swim outside! There's also Earth's climate. Earth's climate is what you get when you combine all the climates around the world together. Climate change is a change in the usual weather found in a place. This could be a change in how much rain a place usually gets in a year. Or it could be a change in a place's usual temperature for a month or season. Climate change is also a change in Earth's climate. This could be a change in Earth's usual temperature. Or it could be a change in where rain and snow usually fall on Earth. 
+Weather can change in just a few hours. Climate takes hundreds or even millions of years to change. Climate change is a bad news story that isn't going away from heat waves to hurricanes, from droughts to floods, extreme weather events are becoming more frequent putting lives at risk. Human activity is causing our climate to change, the CO2 emissions from our cars, our industries and our power plants are eating up the planet. To prevent further dangerous levels of climate change, countries around the world signed up to the Paris agreement. The Paris agreement aims to keep Global Warming below 2 degrees to stop the planet from getting warmer we need to reduce the use of fossil fuels and increase the share of renewable energy like wind and low carbon sources. Climate action is everyone's responsibility; government businesses, communities, individuals. The actions we can take to reduce our carbon footprint like investing in green technologies can also reduce costs and create jobs. The risk and costs of inaction are too high to ignore so what are we waiting for the time to act is now.
+</p>
+</div>
+ 
+
+
+<div id="second" class="w3-container person">
+  <br>
+  <img class="w3-round w3-animate-top" src="eng2.png" style="width:50%;">
+  <h5 class="w3-opacity">Graph of the Global Average Surface Temperature Change</h5>
+  <h1><i class="fa fa-clock-o"></i>Evidences of climate change</h1>
+ 
+  <hr>
+  <p align="justify" style="font-size: 25px;">The last 20 years have included some of the hottest on record, oceans rising due to the melting polar ice caps, pouring it into the oceans. An example of this is during hurricane Sandy during 2012 where it showed the dangers of rising ocean waters. The change in our climate is mainly due to the greenhouse effect, where human activities pump more greenhouse gasses into the atmosphere trapping more heat, leading to the steady rise of temperature on the earth's surface. We live in a society that depends on the unpredictability of weather, if we make the weather more unpredictable it is expected that more people will suffer. So far we have seen the world's average temperature rise to about 1/2 degrees fahrenheit since the late 1800's.The solution will never be easy and it won't be cheap but at least we know how to resolve our actions that lead to this disaster. We must change the way we use our energy resources and land to let our future generation see the beauty of earth for centuries to come 
+</p>
+
+</div>
+
+<div id="third" class="w3-container person">
+  <br>
+  <img class="w3-round w3-animate-top" src="eng3.png" style="width:50%;">
+  <h5 class="w3-opacity">Climate Change and what it does</h5>
+  <h1><i class="fa fa-clock-o"></i> Cause and Effects of climate change</h1>
+ 
+  <hr>
+  <p style="font-size: 30px;"><b>CAUSES:</b><br>
+<ol style="font-size: 20px;">
+<li> CFC (chlorofluorocarbon) emissions in the atmosphere from modes of transportation and factories<br>
+<li> Deforestation led by urbanization that depletes natural air converters in the ecosystem<br>
+<li>  Increased solid waste and water pollution that destroys marine ecosystems<br>
+<li> Thick smogs around urban areas that exponentially increases rates of air pollution and destruction of the ozone layer<br>
+<li>  Over-consumption of natural resources and food by the people
+</ol>
+</p>
+  <p style="font-size: 30px;"><b>EFFECTS:</b><br>
+<ol style="font-size: 20px;">
+<li> Gases such as carbon dioxide, nitrous oxide, and methane could lead to the greenhouse effect, leading to global warming.<br>
+<li>  More extreme weather and climate alterations such as droughts and typhoon, leading to more destruction to human infrastructure.<br>
+<li>  Less success for farmers and other forms of livelihood that depends on natural resources brought by extreme weather phenomena<br>
+<li>  More people would become susceptible to developing chronic lung diseases such as asthma and possible risk of lung cancer.<br>
+<li>  The proliferation of diseases such as malaria from mosquitoes will be noticed, causing major health concerns around the globe.<br>
+</ol>
+</p>
+</div>
+     
+</div>
+
+<script>
+var openInbox = document.getElementById("myBtn");
+openInbox.click();
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function myFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show"; 
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+
+openMail("Borge")
+function openMail(personName) {
+  var i;
+  var x = document.getElementsByClassName("person");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x = document.getElementsByClassName("test");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" w3-light-grey", "");
+  }
+  document.getElementById(personName).style.display = "block";
+  event.currentTarget.className += " w3-light-grey";
+}
+</script>
+
+<script>
+var openTab = document.getElementById("firstTab");
+openTab.click();
+</script>
+
+</body>
+</html> 

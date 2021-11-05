@@ -1,0 +1,593 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Nuc chem</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 50%;
+  padding: 8px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</head>  
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('NC1.png');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("NC3.png");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("NC4.png");
+  min-height: 400px;
+}
+
+/* Fourth image (Contact) */
+.bgimg-4 {
+  background-image: url("NC5.png");
+  min-height: 400px;
+}
+
+/* Fifth image (Contact) */
+.bgimg-5 {
+  background-image: url("NC6.png");
+  min-height: 400px;
+}
+
+/* Sixth image (Contact) */
+.bgimg-6 {
+  background-image: url("NC7.png");
+  min-height: 400px;
+}
+
+/* Seventh image (Contact) */
+.bgimg-7 {
+  background-image: url("NC8.png");
+  min-height: 400px;
+}
+
+/* eigth image (Contact) */
+.bgimg-8 {
+  background-image: url("NC9.png");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 .bgimg-4 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="homee.html" class="w3-bar-item w3-button"><b>HOME</b></a>
+    <a href="#INTRODUCTION" class="w3-bar-item w3-button w3-hide-small"><b>INTRODUCTION</b></a>
+    <a href="#RADIO WAVES" class="w3-bar-item w3-button w3-hide-small"><b>RADIO WAVES</b></a>
+    <a href="#MICROWAVE" class="w3-bar-item w3-button w3-hide-small"><b>MICROWAVE</b></a>
+    <a href="#INFRARED WAVE" class="w3-bar-item w3-button w3-hide-small"><b> INFRARED WAVE</b></a>
+    <a href="#VISIBLE LIGHT" class="w3-bar-item w3-button w3-hide-small"><b>VISIBLE LIGHT</b></a>
+    <a href="#ULTRAVIOLET" class="w3-bar-item w3-button w3-hide-small"><b>ULTRAVIOLET</b></a>
+    <a href="#X-RAYS" class="w3-bar-item w3-button w3-hide-small"><b>X-RAYS</b></a>
+    <a href="#GAMMA RAYS" class="w3-bar-item w3-button w3-hide-small"><b>GAMMA RAYS</b></a>
+  
+  
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="homee.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#INTRODUCTION" class="w3-bar-item w3-button" onclick="toggleFunction()">INTRODUCTION</a>
+    <a href="#RADIO WAVES" class="w3-bar-item w3-button" onclick="toggleFunction()">RADIO WAVES</a>
+    <a href="#MICROWAVE" class="w3-bar-item w3-button" onclick="toggleFunction()">MICROWAVE</a>
+    <a href="#INFRARED WAVE" class="w3-bar-item w3-button" onclick="toggleFunction()">INFRARED WAVE</a>
+    <a href="#VISIBLE LIGHT" class="w3-bar-item w3-button" onclick="toggleFunction()">VISIBLE LIGHT</a>
+    <a href="#ULTRAVIOLET" class="w3-bar-item w3-button" onclick="toggleFunction()">ULTRAVIOLET/a>
+    <a href="#X-RAY" class="w3-bar-item w3-button" onclick="toggleFunction()">X-RAYS</a>
+    <a href="#GAMMA RAYS" class="w3-bar-item w3-button" onclick="toggleFunction()">GAMMA RAYS</a>
+
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><b>le changement climatique</b></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="INTRODUCTION">
+  <h3 class="w3-center">BE SUN SMART!</h3>
+  <p class="w3-center"><em>SOIS INTELLIGENT POUR LE SOLEIL!</em></p>
+  <p align="justify">The Earth is protected from harmful ultraviolet (UV) radiation from the sun by a layer of ozone molecules found in our stratosphere. 
+This protective layer has been damaged and the ozone has been depleted as a result of the excessive release of chlorine and bromine from man-made compounds 
+such as chlorofluorocarbons (CFCs) and hydrobromofluorocarbons (HBFCs). As a result of this depletion, an ozone hole was formed, allowing UV rays to penetrate
+ the Earth. An ozone hole is not a hole in the literal sense but is defined geographically as an area where the total ozone amount is less than 220 Dobson units 
+which is a measurement of atmospheric ozone, specifically in the stratosphere. The unit is named after G.M.B. Dobson, one of the first scientists who studied 
+atmospheric ozone.</p>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="NC2.png" class="w3-round w3-image" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p align="justify">The Montreal Protocol on Substances that Deplete the Ozone Layer or the Montreal Protocol was made from an international agreement 
+in 1987. This treaty is specifically designated to stop the production and import of ozone depleting substances in order to reduce their 
+concentration in the atmosphere to help protect the earth's ozone layer. The Montreal Protocol signed by different countries in 1987 imposed 
+restrictions on the use of CFCs and HBFCs. This means that the amount of these ozone-depleting substances will continuously decrease in the 
+years to come. The bad news is that it will not be until the end of the twenty-first century that most ozone depletion will be reversed and 
+the ozone layer will recover.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-whole w3-section">
+    <span class="w3-xlarge"><marquee>Le réchauffement climatique est le résultat de trop d'ondes électromagnétiques</marquee></span><br>
+   Global warming is the result of too much electromagnetic waves
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity" id="RADIO WAVES">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">R A D I O  W A V E S</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" >
+  <h2 class="w3-center">RADIO WAVES</h2>
+  <h3 class="w3-center"><em> Le Radar</em></h3>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="NC10.png" class="w3-round w3-image" width="400" height="310">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p align="justify" style="font-size: 15px;">Radio waves are the longest of all electromagnetic waves and the frequency is divided into specific 
+bands for wireless communication.<br><br<br>
+
+
+<div id="myDiv" style="text-indent:3cm;">
+ <p align="justify" style="font-size: 15px;">
+Radar is an acronym for radio detection and ranging. It makes use of radio waves for detection of 
+objects, weather forecasting, military surveillance, and air traffic control as well as monitoring speed 
+in highway patrol and tracking satellites and debris.</p>
+</div>
+</p>
+  
+  </div>
+</div>
+</div>
+
+ <div class="w3-row-padding">
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="NC11.png" style="width:100%">
+    <div class="w3-container">
+      <h3><center><b>Radio waves reflecting back to Earth from the ionosphere</b></center></h3>
+    </div>
+
+    <div class="w3-container">
+<div id="myDiv" style="text-indent:3cm;">
+ <p align="justify" style="font-size: 15px;">
+     Prof. Colin Price of Tel Aviv University's Department of Geophysical, Atmospheric and Planetary Sciences, 
+working alongside Ph.D. candidate Israel Silber, has discovered that the radio waves reflecting back to Earth from 
+the ionosphere offer valuable news on climate change as well. Their research shows that the strength of radio signals 
+on the ground is a reliable indicator of the temperature change above. Prof. Price and his team used simple radio 
+antennae on the ground to measure radio waves broadcast by navigational transmitters around the globe, then compared 
+information on the strength of these radio signals with data on temperature fluctuations in the upper atmosphere. 
+They discovered that climate change in the upper atmosphere — caused by an abundance of greenhouse gases — may lead 
+to greater absorption of radio waves. Weaker signals could therefore be indicative of greater climate change.
+On the Earth's surface and in the lower atmosphere, an increase of greenhouse gases has a warming effect, the 
+gases acting as a "blanket" and keeping heat from escaping from the Earth into space. But these gases, including 
+carbon dioxide, are increasing in the upper atmosphere as well, where they have a cooling effect.
+When cooled, the ionosphere contracts and descends into the atmosphere to where the air is denser – 
+leading to higher absorption of radio waves, Prof. Price explains. By examining satellite-gathered data 
+on the temperature in the upper atmosphere and comparing results to measurements of radio wave amplitudes 
+collected on the ground, the researchers were able to uncover a clear correlation, consistent over time. As 
+the upper atmosphere gets colder, radio signals lose their strength.
+</p>
+
+
+   
+ <p align="justify" style="font-size: 15px;">Professor Colin Price and PhD candidate Israel Silber used radio antennae on the ground 
+to measure radio signals around the globe. They discovered that there is a correlation between 
+temperature fluctuations in the upper atmosphere and the varying strength of the radio signals.
+The temperature fluctuations in the ionosphere have long been attributed to the proliferation of 
+greenhouse gases on earth. Greenhouse gases act as a shield to escaping infrared radiation from Earth, 
+resulting in warming temps. But in the upper atmosphere, the result is a cooling effect that causes the 
+atmosphere to shrink, moving closer to the planet. It is believed that this process also affects the radio 
+waves passing through the ionosphere.
+</p>
+
+<div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+
+      <img src="NC12.png" width="1000" height="700">
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity" id="MICROWAVE">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide">M I C R O W A V E</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-row-padding">
+  <div class="w3-margin w3-white">
+
+ <h2 align="center"s>MICROWAVES</h2>
+<h3 align="center"s>Micro-Ondes</h3>
+<div id="myDiv" style="text-indent:3cm;">
+ <p align="justify" style="font-size: 15px;">These waves are considered high-frequency radio waves and are mainly used for communication. 
+They were mostly used for long-distance telephone calls before the introduction of optical fibers They 
+are also used to send signals for cable television as well as video or audio feeds from production vans 
+to broadcast stations. Microwaves release millions and millions of tons of carbon monoxide into the environment 
+every year, a new study has shown. Microwaves are good for transmitting information from one place to another because
+microwave energy can penetrate haze, light rain and snow, clouds, and smoke. 
+</p>
+
+  <center><img src="NC14.png"></center>
+    <div class="w3-container">
+    </div>
+
+    <div class="w3-container">
+
+       <p align="justify" style="font-size: 15px;">
+Shorter microwaves are used in remote sensing. These microwaves are used for radar like the doppler radar 
+used in weather forecasts. Microwaves, used for radar, are just a few inches long. The Earth's atmosphere is 
+transparent to some wavelengths of microwave radiation, but not to others. The longer wavelengths (waves more 
+similar to radio waves) pass through the Earth's atmosphere more easily than the shorter wavelength microwaves. 
+Microwave telescopes need to be large, but not as large as radio telescopes. It postulates that microwaves used 
+by wireless, radar, mobile, and satellite systems create a constant wave bombardment that causes molecular friction 
+leading to warming and erratic weather changes.</p>
+
+<div id="myDiv" style="text-indent:15cm;">
+<img src="NC13.png">
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+
+<div class="bgimg-4 w3-display-container w3-opacity-min" id="INFRARED WAVE">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide"><center>I N F R A R E D<br>  W A V E</center></span>
+  </div>
+</div>
+
+<div class="w3-center w3-row-padding w3-white w3-padding-64 w3-container">
+       <h2 align="center"s>INFRARED WAVES</h2>
+<h3 align="center"s>Ondes Infrarouges</h3>
+    <div class="w3-content">
+
+
+	<img src="NC15.png" align="middle">
+	<div id="myDiv" style="text-indent:3cm;">
+      <p align="justify" class="w3-text-black" style="font-size: 15px;">An effective absorber of infrared radiation has a
+ broader absorption profile, which means that it can absorb a wider spectrum of wavelengths. Infrared light
+ lies between the visible and microwave portions of the electromagnetic spectrum. Infrared light has a range 
+of wavelengths, just like visible light has wavelengths that range from red light to violet. "Near infrared" 
+light is closest in wavelength to visible light and "far infrared" is closer to the microwave region of the 
+electromagnetic spectrum. The longer, far infrared wavelengths are about the size of a pin head and the shorter,
+ near infrared ones are the size of cells, or are microscopic.
+</p>
+
+<p align="justify" class="w3-text-black" style="font-size: 15px;">Infrared means “below red” whereas they have a lower 
+frequency than the red part of the visible light. We don’t see infrared radiation but we feel it as heat.
+ Higher temperatures produce shorter infrared rays These are used in remote controls for television sets, 
+burglar alarm systems, night vision cameras, and certain types of thermometers. Most computers, laptops, palmtops, 
+and printers are equipped with infrared data association ports that enable us to transfer and print data without 
+connecting them with cable.
+</p>
+
+	<img src="NC16.png" align="middle">
+
+<p align="justify" class="w3-text-black" style="font-size: 15px;">The sun's visible wavelengths of radiation pass easily through 
+the atmosphere and reach Earth. Approximately 51% of this sunlight is absorbed in Earth's surface by the land, water,
+ and vegetation. Some of this energy is emitted back from the Earth's surface in the form of infrared radiation. 
+Greenhouse gases in the atmosphere (methane, carbon dioxide, etc.) let visible light pass through but absorb infrared 
+light – causing the atmosphere to heat up. The warmer atmosphere emits more infrared light, which tends to be 
+re-absorbed – perhaps many times – before the energy eventually returns to space.  Such increases cause extra infrared 
+light absorption, further heating Earth above its typical temperature range (even as energy from the sun stays basically 
+the same). In other words, the energy that gets to Earth has an even harder time leaving it, causing Earth’s average temperature
+ to increase – producing global climate change.
+</p>
+
+	<img src="NC17.png" align="middle">
+
+    </div>
+  </div>
+</div>
+
+<FIFTH>
+
+<div class="bgimg-5 w3-display-container w3-opacity-min" id="VISIBLE LIGHT">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide"><center>V I S I B L E <br> L I G H T</center></span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64">
+  <h2 class="w3-center">VISIBLE LIGHT</h2>
+  <h3 class="w3-center"><em>lumière visible</em></h3>
+  <p align="justify" style="font-size: 15px;">These are the electromagnetic radiations that can be seen by our naked eye. This part of the electromagnetic 
+spectrum is aptly called ‘visible light’ The sequence of visible light from longest to shortest may be remembered 
+by the acronym ROYGBIV: red, orange, yellow, green, blue, indigo, and violet but in modern usage indigo is not 
+usually distinguished as a separate color. The light that we can see with our eyes is just a small part of the 
+full spectrum of light that occurs in nature. We call this the electromagnetic spectrum because the light is a 
+composite of interacting electric and magnetic force fields. </p>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="NC18.png" class="w3-round w3-image" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p align="justify" style="font-size: 15px;">The spectrum extends from low-energy microwaves and infrared light to the visible part 
+of the spectrum (red, orange, yellow, green, blue, and violet), and then to more energetic forms 
+of light such as ultraviolet and x-rays. The temperature of an object is determined by a balance between 
+incoming and outgoing energy. For the Earth, the incoming energy is the absorbed light from the Sun, and the 
+outgoing energy is the infrared light the Earth radiates out to space. In the absence of an atmosphere with its 
+Greenhouse Effect, that balance would lead to very cold temperatures – well below the freezing point of water.
+</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<SIXTH>
+
+<div class="bgimg-6 w3-display-container w3-opacity-min" id="ULTRAVIOLET">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">U L T R A V I O L E T</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64">
+<div id="myDiv" style="text-indent:3cm;">
+  <h2 class="w3-center">ULTRAVIOLET</h2>
+  <h3 class="w3-center"><em>Qu’est-ce qu’il est ultraviolet?</em></h3>
+  <p align="justify" style="font-size: 15px;">It is more popularly known as UV which has 3 different wavelengths: UVA, UVB, and UVC. It is almost 
+completely absorbed by the atmosphere and does not reach the Earth’s surface. Scientists have divided the 
+ultraviolet part of the spectrum into three regions: the near ultraviolet, the far ultraviolet, and the 
+extreme ultraviolet. The three regions are distinguished by how energetic the ultraviolet radiation is, and 
+by the "wavelength" of the ultraviolet light, which is related to energy. The near ultraviolet, abbreviated NUV, 
+is the light closest to optical or visible light. The extreme ultraviolet, abbreviated EUV, is the ultraviolet 
+light closest to X-rays, and is the most energetic of the three types. The far ultraviolet, abbreviated FUV, lies 
+between the near and extreme ultraviolet regions. It is the least explored of the three regions.</p>
+
+ <p align="justify" style="font-size: 15px;">Climate change may have indirectly influenced the levels of UV radiation in the past by altering the amounts 
+of ozone, UV-absorbing tropospheric gases, aerosols, and clouds in the atmosphere. These influences will likely 
+continue into the future. The combined direct or indirect effects of these climate change-related factors are likely 
+to influence the levels of solar UV radiation in the future and modulate the effects of the projected recovery of ozone. 
+This interaction, which depends on latitude and on the emissions of GHGs, increases the complexity of assessing the future 
+levels of solar UV radiation at the Earth's surface.  </p></div>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="NC19.png" class="w3-round w3-image" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p align="justify" style="font-size: 15px;">As UV radiation propagates through the atmosphere, in addition to being affected by ozone, 
+it is modified through absorption and scattering by atmospheric constituents, including aerosols and clouds,
+ and by reflections on the Earth's surface. The effects of the most important factors are discussed in the following 
+sections based on established knowledge and on new findings. The effects are discussed in order to assess the relative 
+importance of these factors on the UV irradiance that reaches the surface in the context of ozone and climate changes.
+</p>
+
+
+ <img src="NC20.png" style="width:100%">
+
+    </div>
+  </div>
+</div>
+</div>
+
+<SEVENTH>
+
+<div class="bgimg-7 w3-display-container w3-opacity-min" id="X-RAYS">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">X - R A Y S</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64">
+  <h2 class="w3-center">X-RAYS</h2>
+  <h3 class="w3-center"><em>X rayons</em></h3>
+
+
+ <img src="NC21.png" style="width:100%">
+<div id="myDiv" style="text-indent:3cm;">
+
+  <p align="justify" style="font-size: 15px;">X-rays are sometimes called ‘Roentgen rays’ and the letter X is normally used to 
+represent an unknown quantity. It can be soft x-rays or hard x-rays; (a) soft x-rays can 
+penetrate soft substances like flesh and bones (b) hard x-rays are more penetrating which 
+are used mainly in industries. X-rays have much higher energy and much shorter wavelengths 
+than ultraviolet light, and scientists usually refer to x-rays in terms of their energy rather 
+than their wavelength. This is partly because x-rays have very small wavelengths, between 0.03 
+and 3 nanometers, so small that some x-rays are no bigger than a single atom of many elements. 
+</p>
+</div>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="NC22.png" class="w3-round w3-image" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+<div id="myDiv" style="text-indent:2cm;">
+      <p align="justify" style="font-size: 15px;">The energetic charged particles from the Sun that cause an aurora also energize electrons 
+in the Earth's magnetosphere. These electrons move along the Earth's magnetic field and eventually 
+strike the Earth's ionosphere, causing the x-ray emissions. These x-rays are not dangerous to people 
+on the Earth because they are absorbed by lower parts of the Earth's atmosphere.   X-ray photons that 
+are observed to be tiny high-energy packets of electromagnetic radiation which are absorbed by encounters 
+with individual atoms. Even though the atoms in the atmosphere are widely spaced, the total thickness of 
+the atmosphere is large and the total number of atoms is enormous. 
+</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<EIGHT>
+
+<div class="bgimg-8 w3-display-container w3-opacity-min" id="GAMMA RAYS">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide">G A M M A  R A Y S</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64">
+  <h2 class="w3-center">GAMMA RAYS</h2>
+  <h3 class="w3-center"><em>rayons gamma</em></h3>
+
+ <img src="NC23.png" style="width:100%">
+
+  <p align="justify" style="font-size: 15px;">Gamma rays are given off by radioactive materials like cobalt-60 and cesium-137.  Astronomical objects, 
+including the sun, clouds of interstellar matter, and remnants of supernovae, are sources of gamma rays. These 
+rays are highly penetrating because of their very short wavelengths. Gamma rays are given off by radioactive 
+atoms and nuclear explosions. They are also given off by the sun and other stars, as well as by collapsing stars 
+in gamma-ray bursts. Fortunately, gamma rays from space are absorbed by Earth’s atmosphere before they can reach 
+the surface. </p>
+
+ <p align="justify" style="font-size: 15px;">The extremely high energy of gamma rays allows them to penetrate just about anything. They can even 
+pass through bones and teeth. This makes gamma rays very dangerous. They can destroy living cells, produce 
+gene mutations, and cause cancer. Ironically, the deadly effects of gamma rays can be used to treat cancer. 
+In this type of treatment, a medical device sends out focused gamma rays that target cancerous cells. The gamma 
+rays kill the cells and destroy the cancer.
+</p>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="NC24.png" alt="Italy" style="width:70%">
+  </div>
+  <div class="img-container">
+  <img src="NC25.png" alt="Forest" style="width:80%">
+  </div>
+</div>
+
+
+ <p align="justify" style="font-size: 15px;">Gamma-rays have the smallest wavelengths and the most energy of any other wave in the electromagnetic 
+spectrum. These waves are generated by radioactive atoms and in nuclear explosions. Gamma-rays travel to 
+us across vast distances of the universe, only to be absorbed by the Earth's atmosphere. Different wavelengths 
+of light penetrate the Earth's atmosphere to different depths. Instruments aboard high-altitude balloons and 
+satellites like the Compton Observatory provide our only view of the gamma-ray sky.</p>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="homee.html"/"target="_self" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back To Homepage</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
